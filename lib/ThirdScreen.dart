@@ -36,16 +36,17 @@ class _TheirdScreenState extends State<TheirdScreen> {
           ),
         ],
       ),
-      body: Column(
+      body: ListView(
         children: [
-          Image.asset("Image/fav.jpg"),
-          SizedBox(height: 30,),
+          Image.asset('image/UiUx.jpg',height: 200),
+          SizedBox(height: 10,),
           Expanded(
             child: Container(
               width: double.infinity,
               decoration: BoxDecoration(
                 color: Colors.grey[200],
-                borderRadius: BorderRadius.only(topLeft: Radius.circular(80) ,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(80) ,
                     topRight: Radius.circular(80)),
               ),
               child: Padding(
@@ -228,7 +229,7 @@ class _TheirdScreenState extends State<TheirdScreen> {
                                 borderRadius: BorderRadius.circular(15),
                                 color: Colors.grey[300],
                               ),
-                              child: Icon(Icons.heart_broken,size: 30,color: Colors.red[400],),
+                              child: Image.asset('image/heart.png',cacheHeight: 45,cacheWidth: 45,)
                             ),
                             Container(
                               padding: EdgeInsets.only(left: 70,top: 25),

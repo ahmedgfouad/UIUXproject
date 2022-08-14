@@ -108,6 +108,7 @@ class _SecondScreenState extends State<SecondScreen> {
                 ),
                 SizedBox(height: 20,),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     GestureDetector(
                       onTap: (){
@@ -115,10 +116,17 @@ class _SecondScreenState extends State<SecondScreen> {
                             .pushReplacement(MaterialPageRoute(builder: (context)=>TheirdScreen()));
                       },
                       child: Container(
-                        padding: EdgeInsets.all(20),
+                        padding: EdgeInsets.all(10),
                         width: 150,
                         height: 150,
                         decoration: BoxDecoration(
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.shade900,
+                              blurRadius: 9,
+
+                            ),
+                          ],
                           color: Colors.deepPurple[300],
                           borderRadius: BorderRadius.circular(20),
                         ),
@@ -136,19 +144,33 @@ class _SecondScreenState extends State<SecondScreen> {
                                 fontSize: 13,
                                 color: Colors.white,
                               ),),
-                            SizedBox(height: 20,),
-                            Image.asset("Image/UiUx.jpg")
+                            SizedBox(height: 10),
+                            Container(
+                              width: 150,
+                              height: 80,
+                              decoration: BoxDecoration(
+                                  color: Colors.deepPurple[300]
+                              ),
+                              child:Image.asset("image/UiUx.jpg",),
 
+                            )
                           ],
                         ),
                       ),
                     ),
                     SizedBox(width: 60,),
                     Container(
-                      padding: EdgeInsets.all(20),
+                      padding: EdgeInsets.all(10),
                       width: 150,
                       height: 150,
                       decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.shade900,
+                            blurRadius: 9,
+
+                          ),
+                        ],
                         color: Colors.green,
                         borderRadius: BorderRadius.circular(20),
                       ),
@@ -166,8 +188,15 @@ class _SecondScreenState extends State<SecondScreen> {
                               fontSize: 13,
                               color: Colors.white,
                             ),),
-                          SizedBox(height: 20,),
-                          Image.asset("images/market.jpg")
+                          SizedBox(height: 10,),
+                          Container(
+                              width: 150,
+                              height: 80,
+                              decoration: BoxDecoration(
+                                  color: Colors.green
+                              ),
+                              child:Image.asset("image/market.jpg",),
+                          )
                         ],
                       ),
                     ),
@@ -175,12 +204,20 @@ class _SecondScreenState extends State<SecondScreen> {
                 ),
                 SizedBox(height: 20,),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      padding: EdgeInsets.all(20),
+                      padding: EdgeInsets.all(10),
                       width: 150,
                       height: 150,
                       decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.shade900,
+                            blurRadius: 9,
+
+                          ),
+                        ],
                         color: Colors.redAccent,
                         borderRadius: BorderRadius.circular(20),
                       ),
@@ -198,17 +235,30 @@ class _SecondScreenState extends State<SecondScreen> {
                               fontSize: 13,
                               color: Colors.white,
                             ),),
-                          SizedBox(height: 20,),
-                          Image.asset("image/photo.jpg",width: 20,height: 40,)
+                          SizedBox(height: 10,),
+                          Container(
+                            width: 150,
+                            height: 80,
+                            decoration: BoxDecoration(
+                              color: Colors.redAccent
+                            ),
+                            child: Image.asset('image/photo.jpg',)
+                          )
                         ],
                       ),
                     ),
                     SizedBox(width: 60,),
                     Container(
-                      padding: EdgeInsets.all(20),
+                      padding: EdgeInsets.all(10),
                       width: 150,
                       height: 150,
                       decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.shade900,
+                            blurRadius: 9,
+                          ),
+                        ],
                         color: Colors.blue,
                         borderRadius: BorderRadius.circular(20),
                       ),
@@ -226,8 +276,15 @@ class _SecondScreenState extends State<SecondScreen> {
                               fontSize: 13,
                               color: Colors.white,
                             ),),
-                          SizedBox(height: 20,),
-                          Image.asset("Image/flutter.png")
+                          SizedBox(height: 10,),
+                          Container(
+                              width: 150,
+                              height: 80,
+                              decoration: BoxDecoration(
+                                  color: Colors.blue
+                              ),
+                              child:Image.asset("image/flutter.png",)
+                          )
 
                         ],
                       ),
@@ -249,8 +306,8 @@ class _SecondScreenState extends State<SecondScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Icon(Icons.home , color: Colors.deepPurpleAccent, size: 40,),
-              // Image.asset("image/heart.png"),
-              // Image.asset("image/sqa.png"),
+             Image.asset('image/heart.png',cacheWidth:40,cacheHeight: 40,),
+              Image.asset("image/sqa.png",cacheWidth: 40,cacheHeight: 30,),
               Icon(Icons.person , color: Colors.grey, size: 40,),
             ],
           ),
